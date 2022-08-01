@@ -6,8 +6,8 @@ body {
   overflow: hidden;
 }
 html {
-  background: url(img/glass.jpg) no-repeat;
-  background-size: contain;
+  background: url(img/apple.jpg) no-repeat;
+  background-size: cover;
   background-position: center;
 }
 .App {
@@ -60,10 +60,9 @@ html {
   top: 35px;
 }
 .glitch2 {
-  color: white;
+  color: black;
   font-size: 31px;
   position: relative;
-  width: 800px;
   margin: 0 auto;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -73,48 +72,51 @@ html {
   position: absolute;
   top: 150px;
   left: 389px;
-  width: 9em;
-  background: linear-gradient(269deg, rgb(13 71 224), rgb(244 1 226)) !important;
-  padding-left: 75px !important;
-  border-radius: 20px 95px;
-}
-.glitch2:after {
-  padding-left: 75px !important;
-
-  content: attr(data-text);
-  position: absolute;
-  left: 2px;
-  top: 6px;
-  color: white;
-  background: linear-gradient(269deg, rgb(13 71 224), rgb(244 1 226)) !important;
-  overflow: hidden;
-  clip: rect(0, 900px, 0, 0);
-  animation: noise-anim 4s infinite linear alternate-reverse;
+  width: 6em;
+  background: linear-gradient(
+    64deg,
+    rgb(164 173 192),
+    rgb(174 183 202)
+  ) !important;
 }
 
 .glitch2:before {
-  padding-left: 75px !important;
-
   content: attr(data-text);
   position: absolute;
   left: 1px;
   top: 13px;
   padding-left: 5px;
-  color: white;
-  background: linear-gradient(269deg, rgb(13 71 224), rgb(244 1 226)) !important;
+  color: black;
+  background: linear-gradient(
+    64deg,
+    rgb(164 173 192),
+    rgb(174 183 202)
+  ) !important;
   overflow: hidden;
   clip: rect(0, 900px, 0, 0);
   animation: noise-anim-2 4s infinite linear alternate-reverse;
 }
+.glitch2:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 2px;
+  top: 12px;
+  color: black;
+  background: linear-gradient(
+    64deg,
+    rgb(164 173 192),
+    rgb(174 183 202)
+  ) !important;
+
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim 4s infinite linear alternate-reverse;
+}
 .glitch {
-  padding-left: 75px !important;
-
-  border-radius: 20px 95px;
-  color: white;
+  color: black;
   font-size: 61px;
-
   position: relative;
-  width: 800px;
+  width: 371px;
   margin: 0 auto;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -123,38 +125,43 @@ html {
   padding: 0.5em 0em;
   position: absolute;
   top: 24px;
-  width: 9em;
-  background: linear-gradient(90deg, rgb(13 71 224), rgb(244 1 226)) !important;
-
-}
-
-.glitch:after {
-  padding-left: 75px !important;
-
-  content: attr(data-text);
-  position: absolute;
-  left: 7px;
-  top: 35px;
-  color: white;
-  background: linear-gradient(90deg, rgb(13 71 224), rgb(244 1 226)) !important;
-  overflow: hidden;
-  clip: rect(0, 900px, 0, 0);
-  animation: noise-anim 6s infinite linear alternate-reverse;
+  background: linear-gradient(
+    64deg,
+    rgb(149 157 176),
+    rgb(173 182 201)
+  ) !important;
 }
 
 .glitch:before {
-  padding-left: 75px !important;
-
   content: attr(data-text);
   position: absolute;
   left: 1px;
   top: 25px;
   padding-left: 5px;
-  color: white;
-  background: linear-gradient(90deg, rgb(13 71 224), rgb(244 1 226)) !important;
+  color: black;
+  background: linear-gradient(
+    64deg,
+    rgb(149 157 176),
+    rgb(173 182 201)
+  ) !important;
   overflow: hidden;
   clip: rect(0, 900px, 0, 0);
   animation: noise-anim-2 6s infinite linear alternate-reverse;
+}
+.glitch:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 7px;
+  top: 35px;
+  color: black;
+  background: linear-gradient(
+    64deg,
+    rgb(149 157 176),
+    rgb(173 182 201)
+  ) !important;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim 6s infinite linear alternate-reverse;
 }
 
 @keyframes noise-anim {
@@ -333,11 +340,7 @@ html {
 .btnGuide {
   font-family: "Staatliches", cursive !important;
   font-size: 27px !important;
-  background: linear-gradient(
-    90deg,
-    rgb(179 3 163),
-    rgb(22 128 254)
-  ) !important;
+  background: linear-gradient(90deg, rgb(17 55 92), rgb(22 128 254)) !important;
   margin-bottom: 91px !important;
   transform: skew(45deg) !important;
   height: 58px;
@@ -359,9 +362,9 @@ html {
   width: 1351px;
   height: 820px;
   background: linear-gradient(
-    225deg,
-    rgb(20 99 155),
-    rgb(148, 2, 169, 0.8)
+    89deg,
+    rgb(223, 90, 59, 0.9),
+    rgb(21, 68, 108, 0.9)
   ) !important;
   position: absolute;
   top: -83px;
