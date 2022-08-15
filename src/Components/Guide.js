@@ -7,26 +7,14 @@ import Contact from './Contact';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import WorkPage from './WorkPage';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import Technologies from './Technologies';
 
 
-// const aboutPage = (
-//     <Paper sx={{ m: 1 }} elevation={4}>
-//         <div className=''>
-//             ABOUT
-//         </div>
-//     </Paper>
-// );
-// const contactPage = (
-//     <Paper sx={{ m: 1 }} elevation={4}>
-//         <div className=''>
-//             CONTACT
-//         </div>
-//     </Paper>
-// );
 const Guide = () => {
     const [showWork, setShowWork] = React.useState(false);
     const [showAbout, setShowAbout] = React.useState(false);
     const [showContact, setShowContact] = React.useState(false);
+    const [showTechnologies, setShowTechonologies] = React.useState(false);
     const [checkedBtn, setCheckedBtn] = React.useState(true);
 
     const showWorkPage = () => {
@@ -41,6 +29,10 @@ const Guide = () => {
         setShowContact((prev) => !prev);
         handleChange();
     }
+    const showTechnologiesPage = () => {
+        setShowTechonologies((prev) => !prev);
+        handleChange();
+    }
 
     const handleChange = () => {
         setCheckedBtn((prev) => !prev);
@@ -53,6 +45,7 @@ const Guide = () => {
                 <div className='btnGuideContainer'>
                     <Button variant="contained" onClick={showWorkPage} className='btnGuide'><p>Work</p></Button>
                     <Button variant="contained" onClick={showAboutPage} className='btnGuide'><p>About</p></Button>
+                    <Button variant="contained" onClick={showTechnologiesPage} className='btnGuide'><p>Technologies</p></Button>
                     <Button variant="contained" onClick={showContactPage} className='btnGuide'><p>Contact</p></Button>
                 </div>
             </Slide>
@@ -91,7 +84,24 @@ const Guide = () => {
                             </Paper>
                         </div>
                     </Slide>
+                </Box>
 
+                <Box >
+                    <Slide direction="left" in={showTechnologies} mountOnEnter unmountOnExit>
+                        <div className='topicContainer'>
+                            <div className='mainBarTopic'>
+                                <IconButton className='btnExit' aria-label="delete" onClick={showTechnologiesPage}>
+                                    <ChevronRightIcon />
+                                </IconButton>
+                                <p>
+                                    Technologies
+                                </p>
+                            </div>
+                            <Paper className='paperInfo' sx={{ m: 1 }} elevation={4}>
+                                <Technologies />
+                            </Paper>
+                        </div>
+                    </Slide>
                 </Box>
 
                 <Box >
