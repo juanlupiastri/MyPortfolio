@@ -43,7 +43,7 @@ const WorkPage = () => {
             <TimelineDot />
             <TimelineConnector />
           </TimelineSeparator>
-          <TimelineContent>July / 2022</TimelineContent>
+          <TimelineContent>June / 2022</TimelineContent>
         </TimelineItem>
 
         <TimelineItem>

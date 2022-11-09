@@ -32,6 +32,10 @@ import home from "../icons/home.png"
 import r from "../icons/r.png"
 import azure from "../icons/azure.png"
 import firebase from "../icons/firebase.png"
+import sql from "../icons/sql.webp"
+import matui from "../icons/matui.webp"
+import primeng from "../icons/primeng.webp"
+import bootstrap from "../icons/bootstrap.webp"
 import { Zoom } from '@mui/material';
 
 const Technologies = () => {
@@ -40,41 +44,41 @@ const Technologies = () => {
         <div className='topicInfo'>
             <h2 className='techTitle'>Languages</h2>
             <ImageList sx={{ width: 600, height: 600 }} className="imgList">
-            <ImageListItem>
+                <ImageListItem>
                     <Tooltip title="JavaScript " arrow TransitionComponent={Zoom}>
-                        <img
+                        <img className="imgContact"
                             src={js}
                             alt="JavaScript "
                         />
                     </Tooltip>
                 </ImageListItem>
                 <ImageListItem>
-                    <Tooltip title="HTML "arrow TransitionComponent={Zoom}>
-                        <img
+                    <Tooltip title="HTML " arrow TransitionComponent={Zoom}>
+                        <img className="imgContact"
                             src={html}
                             alt="HTML "
                         />
                     </Tooltip>
                 </ImageListItem>
                 <ImageListItem >
-                    <Tooltip title="CSS "arrow TransitionComponent={Zoom}>
-                        <img
+                    <Tooltip title="CSS " arrow TransitionComponent={Zoom}>
+                        <img className="imgContact"
                             src={css}
                             alt="CSS "
                         />
                     </Tooltip>
                 </ImageListItem>
                 <ImageListItem>
-                    <Tooltip title="Typescript "arrow TransitionComponent={Zoom}>
-                        <img
+                    <Tooltip title="Typescript " arrow TransitionComponent={Zoom}>
+                        <img className="imgContact"
                             src={typescript}
                             alt="Typescript "
                         />
                     </Tooltip>
                 </ImageListItem>
                 <ImageListItem >
-                    <Tooltip title="C# "arrow TransitionComponent={Zoom}>
-                        <img
+                    <Tooltip title="C# " arrow TransitionComponent={Zoom}>
+                        <img className="imgContact"
                             src={cs}
                             alt="C# "
                         />
@@ -82,8 +86,8 @@ const Technologies = () => {
                 </ImageListItem>
 
                 <ImageListItem >
-                    <Tooltip title="SASS "arrow TransitionComponent={Zoom}>
-                        <img
+                    <Tooltip title="SASS " arrow TransitionComponent={Zoom}>
+                        <img className="imgContact"
                             src={sass}
                             alt="SASS "
                         />
@@ -91,24 +95,24 @@ const Technologies = () => {
                 </ImageListItem>
 
                 <ImageListItem >
-                    <Tooltip title="Python "arrow TransitionComponent={Zoom}>
-                        <img
+                    <Tooltip title="Python " arrow TransitionComponent={Zoom}>
+                        <img className="imgContact"
                             src={python}
                             alt="Python"
                         />
                     </Tooltip>
                 </ImageListItem>
                 <ImageListItem>
-                    <Tooltip title="Java "arrow TransitionComponent={Zoom}>
-                        <img
+                    <Tooltip title="Java " arrow TransitionComponent={Zoom}>
+                        <img className="imgContact"
                             src={java}
                             alt="Java "
                         />
                     </Tooltip>
                 </ImageListItem>
                 <ImageListItem>
-                    <Tooltip title="R "arrow TransitionComponent={Zoom}>
-                        <img
+                    <Tooltip title="R " arrow TransitionComponent={Zoom}>
+                        <img className="imgContact"
                             src={r}
                             alt="R "
                         />
@@ -117,18 +121,19 @@ const Technologies = () => {
             </ImageList>
 
             <h2 className='techTitle'>DB</h2>
-            <ImageList sx={{ width: 600, height: 600 }}   className="imgList">
-                <ImageListItem >
-                    <Tooltip title="Microsoft Azure "arrow TransitionComponent={Zoom}>
-                        <img
-                            src={azure}
-                            alt="Microsoft Azure"
+            <ImageList sx={{ width: 600, height: 600 }} className="imgList">
+            <ImageListItem >
+                    <Tooltip title="Microsoft Sql " arrow TransitionComponent={Zoom}>
+                        <img className="imgContact"
+                            src={sql}
+                            alt="Microsoft Sql"
                         />
                     </Tooltip>
                 </ImageListItem>
+
                 <ImageListItem>
-                    <Tooltip title="Google Firebase"arrow TransitionComponent={Zoom}>
-                        <img
+                    <Tooltip title="Google Firebase" arrow TransitionComponent={Zoom}>
+                        <img className="imgContact"
                             src={firebase}
                             alt="firebase"
                         />
@@ -137,79 +142,105 @@ const Technologies = () => {
             </ImageList>
 
             <h2 className='techTitle'>Frameworks / Libraries</h2>
-            <ImageList sx={{ width: 600, height: 600 }}   className="imgList">
+            <ImageList sx={{ width: 600, height: 600 }} className="imgList">
                 <ImageListItem >
-                    <Tooltip title="React "arrow TransitionComponent={Zoom}>
-                        <img
+                    <Tooltip title="React " arrow TransitionComponent={Zoom}>
+                        <img className="imgContact"
                             src={reactIcon}
                             alt="React icon"
                         />
                     </Tooltip>
                 </ImageListItem>
                 <ImageListItem>
-                    <Tooltip title="Angular "arrow TransitionComponent={Zoom}>
+                    <Tooltip title="Angular " arrow TransitionComponent={Zoom}>
 
-                        <img
+                        <img className="imgContact"
                             src={angularIcon}
                             alt="Angular "
                         />
                     </Tooltip>
                 </ImageListItem>
+
                 <ImageListItem>
-                    <Tooltip title="JQuery"arrow TransitionComponent={Zoom}>
-                        <img
-                            src={jquery}
-                            alt=" JQuery"
+                    <Tooltip title="Bootstrap" arrow TransitionComponent={Zoom}>
+                        <img className="imgContact"
+                            src={bootstrap}
+                            alt="Bootstrap"
                         />
                     </Tooltip>
                 </ImageListItem>
                 <ImageListItem>
-                    <Tooltip title=".NET Framework"arrow TransitionComponent={Zoom}>
-                        <img
+                    <Tooltip title=".NET Framework" arrow TransitionComponent={Zoom}>
+                        <img className="imgContact"
                             src={asp}
                             alt="ASP.NET "
                         />
                     </Tooltip>
                 </ImageListItem>
+                <ImageListItem>
+                    <Tooltip title="Prime Ng" arrow TransitionComponent={Zoom}>
+                        <img className="imgContact"
+                            src={primeng}
+                            alt="Prime Ng "
+                        />
+                    </Tooltip>
+                </ImageListItem>
+                <ImageListItem>
+                    <Tooltip title="Material UI" arrow TransitionComponent={Zoom}>
+                        <img className="imgContact"
+                            src={matui}
+                            alt="Material UI"
+                        />
+                    </Tooltip>
+                </ImageListItem>
+                <ImageListItem>
+                    <Tooltip title="JQuery" arrow TransitionComponent={Zoom}>
+                        <img className="imgContact"
+                            src={jquery}
+                            alt=" JQuery"
+                        />
+                    </Tooltip>
+                </ImageListItem>
+
             </ImageList>
 
             <h2 className='techTitle'>IDE</h2>
-            <ImageList sx={{ width: 600, height: 600 }}   className="imgList">
+            <ImageList sx={{ width: 600, height: 600 }} className="imgList">
                 <ImageListItem>
-                    <Tooltip title="Visual Studio Code 2019 "arrow TransitionComponent={Zoom}>
-                        <img
+                    <Tooltip title="Visual Studio Code 2019 " arrow TransitionComponent={Zoom}>
+                        <img className="imgContact"
                             src={vscode}
                             alt="Visual Studio Code 2019 "
                         />
                     </Tooltip>
                 </ImageListItem>
                 <ImageListItem>
-                    <Tooltip title="Visual Studio 2017 "arrow TransitionComponent={Zoom}>
-                        <img
+                    <Tooltip title="Visual Studio 2017 " arrow TransitionComponent={Zoom}>
+                        <img className="imgContact"
                             src={visual2017}
                             alt="Visual Studio 2017 "
                         />
                     </Tooltip>
                 </ImageListItem>
                 <ImageListItem>
-                    <Tooltip title="Jupyter Notebook "arrow TransitionComponent={Zoom}>
-                        <img
+                    <Tooltip title="Jupyter Notebook " arrow TransitionComponent={Zoom}>
+                        <img className="imgContact"
                             src={jupyter}
                             alt="Jupyter Notebook "
                         />
                     </Tooltip>
                 </ImageListItem>
                 <ImageListItem>
-                    <Tooltip title="Android Studio"arrow TransitionComponent={Zoom}>
-                        <img
+                    <Tooltip title="Android Studio" arrow TransitionComponent={Zoom}>
+                        <img className="imgContact"
                             src={androidStudio}
                             alt="Android "
                         />
                     </Tooltip>
                 </ImageListItem>
                 <ImageListItem>
-                    <Tooltip title="NetBeans "arrow TransitionComponent={Zoom}>
-                        <img
+                    <Tooltip title="NetBeans " arrow TransitionComponent={Zoom}>
+                        <img className="imgContact"
                             src={netbeans}
                             alt="NetBeans "
                         />
@@ -217,72 +248,76 @@ const Technologies = () => {
                 </ImageListItem>
             </ImageList>
 
-            <h2 className='techTitle'>Project Management</h2>
-            <ImageList sx={{ width: 600, height: 600 }}   className="imgList">
-                {/* <ImageListItem>
-                <Tooltip title="Trello ">
-                        <img
-                            src={trello}
-                            alt="Trello "
-                        />
-                    </Tooltip>
-                </ImageListItem> */}
+            <h2 className='techTitle'>Repositories</h2>
+            <ImageList sx={{ width: 600, height: 600 }} className="imgList">
                 <ImageListItem>
-                    <Tooltip title="Git"arrow TransitionComponent={Zoom}>
-                        <img
+                    <Tooltip title="Git" arrow TransitionComponent={Zoom}>
+                        <img className="imgContact"
                             src={git}
                             alt="Git "
                         />
                     </Tooltip>
                 </ImageListItem>
                 <ImageListItem>
-                <Tooltip title="Trello "arrow TransitionComponent={Zoom}>
-                        <img
-                            src={trelloGrande}
-                            alt="Trello "
-                        />
-                    </Tooltip>
-                </ImageListItem>
-                <ImageListItem>
-                    <Tooltip title="Jira"arrow TransitionComponent={Zoom}>
-                        <img
-                            src={jira}
-                            alt="jira"
-                        />
-                    </Tooltip>
-                </ImageListItem>
-
-                <ImageListItem>
-                    <Tooltip title="TFS"arrow TransitionComponent={Zoom}>
-                        <img
+                    <Tooltip title="TFS" arrow TransitionComponent={Zoom}>
+                        <img className="imgContact"
                             src={tfs}
                             alt="tfs"
                         />
                     </Tooltip>
                 </ImageListItem>
             </ImageList>
+            
+            <h2 className='techTitle'>Project Management</h2>
+            <ImageList sx={{ width: 600, height: 600 }} className="imgList">
+            <ImageListItem >
+                    <Tooltip title="Microsoft Azure Devops" arrow TransitionComponent={Zoom}>
+                        <img className="imgContact"
+                            src={azure}
+                            alt="Microsoft Azure Devops"
+                        />
+                    </Tooltip>
+                </ImageListItem>
+                <ImageListItem>
+                    <Tooltip title="Trello " arrow TransitionComponent={Zoom}>
+                        <img className="imgContact"
+                            src={trelloGrande}
+                            alt="Trello "
+                        />
+                    </Tooltip>
+                </ImageListItem>
+                <ImageListItem>
+                    <Tooltip title="Jira" arrow TransitionComponent={Zoom}>
+                        <img className="imgContact"
+                            src={jira}
+                            alt="jira"
+                        />
+                    </Tooltip>
+                </ImageListItem>
+
+            </ImageList>
 
             <h2 className='techTitle'>Design</h2>
-            <ImageList sx={{ width: 600, height: 600 }}   className="imgList">
-            <ImageListItem>
-                    <Tooltip title="Canva "arrow TransitionComponent={Zoom}>
-                        <img
+            <ImageList sx={{ width: 600, height: 600 }} className="imgList">
+                <ImageListItem>
+                    <Tooltip title="Canva " arrow TransitionComponent={Zoom}>
+                        <img className="imgContact"
                             src={canva}
                             alt="Canva"
                         />
                     </Tooltip>
                 </ImageListItem>
                 <ImageListItem>
-                    <Tooltip title="HomeByMe 3D design"arrow TransitionComponent={Zoom}>
-                        <img
+                    <Tooltip title="HomeByMe 3D design" arrow TransitionComponent={Zoom}>
+                        <img className="imgContact"
                             src={home}
                             alt="HomeByMe"
                         />
                     </Tooltip>
                 </ImageListItem>
                 <ImageListItem>
-                    <Tooltip title="Pixlr"arrow TransitionComponent={Zoom}>
-                        <img
+                    <Tooltip title="Pixlr" arrow TransitionComponent={Zoom}>
+                        <img className="imgContact"
                             src={pixlr}
                             alt="Pixlr"
                         />
@@ -291,10 +326,10 @@ const Technologies = () => {
             </ImageList>
 
             <h2 className='techTitle'>Others</h2>
-            <ImageList sx={{ width: 600, height: 600 }}   className="imgList">
-            <ImageListItem>
-                    <Tooltip title="BlueStacks 5"arrow TransitionComponent={Zoom}>
-                        <img
+            <ImageList sx={{ width: 600, height: 600 }} className="imgList">
+                <ImageListItem>
+                    <Tooltip title="BlueStacks 5" arrow TransitionComponent={Zoom}>
+                        <img className="imgContact"
                             src={blueStacks}
                             alt="Canva"
                         />
