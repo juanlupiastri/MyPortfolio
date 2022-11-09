@@ -1,10 +1,8 @@
-import { Box, FormControlLabel, IconButton, Paper, Slide, Switch, Theme } from '@mui/material';
+import { Box, IconButton, Paper, Slide } from '@mui/material';
 import Button from '@mui/material/Button';
 import React from 'react';
-import { Link } from "react-router-dom";
 import About from './About';
 import Contact from './Contact';
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import WorkPage from './WorkPage';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import Technologies from './Technologies';
