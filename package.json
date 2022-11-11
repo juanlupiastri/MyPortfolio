@@ -1,4 +1,5 @@
 {
+  "homepage": "https://juanlupiastri.github.io/MyPortfolio",
   "name": "portfolio-jl",
   "version": "0.1.0",
   "private": true,
@@ -20,7 +21,6 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://juanlupiastri.github.io/MyPortfolio",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
