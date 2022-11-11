@@ -8,7 +8,7 @@ import TimelineDot from '@mui/lab/TimelineDot';
 
 const WorkPage = () => {
   return (
-    <div className='topicInfo'>
+    <div className='topicInfo workInfo'>
       <Timeline>
 
         <TimelineItem>

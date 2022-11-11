@@ -393,7 +393,6 @@ html {
 
 ul {
   list-style: none;
-
 }
 
 .btnGuide {
@@ -491,7 +490,9 @@ ul {
   top: 150px;
   right: 59px;
 }
-
+.workInfo{
+  overflow-x: hidden;
+}
 .css-ha3bif-MuiTimelineItem-root:before {
   margin-left: 35px;
   content: none !important;
@@ -507,13 +508,13 @@ ul {
   justify-items: center !important;
 }
 
-.css-1en9226-MuiImageList-root {
+ul {
   display: flex !important;
   width: 100% !important;
   height: fit-content !important;
   flex-wrap: wrap !important;
   justify-content: center !important;
-  margin-bottom: 70px !important;
+  width: 96% !important;
 }
 
 .imgList img {
@@ -559,7 +560,8 @@ ul {
 }
 
 .contactInfo , .aboutInfo{
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .imgB2 {
@@ -605,13 +607,16 @@ img {
 .btnClose {
   color: white !important;
 }
-
-.css-1rwt2y5-MuiButtonBase-root-MuiButton-root,
-.webProgrammerIcon {
-  max-width: 210px ;
-  max-height: 250px ;
+.btnStatement{
+  border-style: none !important;
+}
+.webProgrammerIconStyle{
+  border-style: none !important;
+  max-width: 210px !important;
+  max-height: 250px !important;
   border: none !important;
 }
+
 .webProgrammerIcon {
   max-width: 150px  !important;
 }

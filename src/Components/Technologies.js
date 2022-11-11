@@ -44,7 +44,7 @@ const Technologies = () => {
         <div className='topicInfo'>
             <h2 className='techTitle'>Languages</h2>
             <ImageList sx={{ width: 600, height: 600 }} className="imgList">
-                <ImageListItem>
+                <ImageListItem class="techItemList">
                     <Tooltip title="JavaScript " arrow TransitionComponent={Zoom}>
                         <img className="imgContact"
                             src={js}

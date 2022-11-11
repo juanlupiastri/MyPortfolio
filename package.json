@@ -2,7 +2,7 @@
   "name": "portfolio-jl",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://juanlupiastri.github.io/PortfolioJL/",
+  "homepage": "https://juanlupiastri.github.io/MyPortfolio/",
   "dependencies": {
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",

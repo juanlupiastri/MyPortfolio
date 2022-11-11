@@ -11,11 +11,6 @@ import b2 from "../icons/b2.png"
 import webProgrammer from '../CvFiles/webProgrammer.pdf';
 import degreeIcon from "../icons/degreeIcon.png"
 
-
-
-
-
-
 const About = () => {
 
     const [open, setOpen] = React.useState(false);
@@ -45,8 +40,8 @@ const About = () => {
             <h2>Certificates:</h2>
             <div className='certificates'>
                 <Tooltip title="Show Statement of result" arrow TransitionComponent={Zoom}>
-                    <Button className='btnClose' variant="outlined" onClick={handleClickOpen}>
-                        <img className="imgContact imgB2"
+                    <Button className='btnClose btnStatement' variant="outlined" onClick={handleClickOpen}>
+                        <img className=" imgB2 webProgrammerIconStyle"
                             src={b2}
                         />
                     </Button>
@@ -69,7 +64,7 @@ const About = () => {
                     </DialogActions>
                 </Dialog>
                 <a href={webProgrammer} target="_blank" rel="noopener noreferrer">
-                    <div className="webProgrammerIcon">
+                    <div className="webProgrammerIcon webProgrammerIconStyle">
                         <Tooltip title="Web Programmer Degree" arrow TransitionComponent={Zoom}>
                             <img className="imgContact imgB2"
                                 src={degreeIcon}
