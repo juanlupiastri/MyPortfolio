@@ -2,6 +2,7 @@
   "name": "portfolio-jl",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://juanlupiastri.github.io/PortfolioJL/",
   "dependencies": {
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
@@ -18,8 +19,7 @@
     "react-dom": "^18.1.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4",
-    "homepage": "https://juanlupiastri.github.io/MyPortfolio/"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "predeploy": "npm run build",
